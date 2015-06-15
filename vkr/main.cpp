@@ -8,6 +8,8 @@
 #include "util.h"
 #include <getopt.h>
 
+extern void yyparse();
+
 extern N_Model *model;
 
 void show_help(const char *bin_name)

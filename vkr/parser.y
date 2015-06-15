@@ -16,7 +16,7 @@ void yyerror(const char *s)
 
 %}
 
-%define parse.error verbose
+/* %define parse.error verbose */
 
 %union{
 	std::string *string;
