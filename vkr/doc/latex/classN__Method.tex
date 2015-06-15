@@ -1,0 +1,151 @@
+\hypertarget{classN__Method}{}\section{N\+\_\+\+Method Class Reference}
+\label{classN__Method}\index{N\+\_\+\+Method@{N\+\_\+\+Method}}
+
+
+{\ttfamily \#include $<$ast.\+h$>$}
+
+Inheritance diagram for N\+\_\+\+Method\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classN__Method}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classN__Method_a107d80e851cfa8d79723f78995c1c07c}{N\+\_\+\+Method} (const std\+::string \&name, const std\+::string \&type, \hyperlink{ast_8h_a8cf536792064de0e4fc620bc6f1dc90e}{Member\+Visibility} vis=\hyperlink{ast_8h_a8cf536792064de0e4fc620bc6f1dc90eae560d950ff759756c70399d8cfe015d0}{M\+V\+\_\+\+P\+R\+I\+V\+A\+T\+E})
+\item 
+virtual \hyperlink{classN__Method_abbaaaf1df2791d4cc1373f8c0a4d6130}{$\sim$\+N\+\_\+\+Method} ()
+\item 
+virtual void \hyperlink{classN__Method_a54ec9f1349dd7aa0ccf91da7cf362a2f}{add\+Param} (\hyperlink{classN__Param}{N\+\_\+\+Param} \&param)
+\item 
+virtual int \hyperlink{classN__Method_aa89de3b7072f61310dd0df6473020066}{get\+Param\+Count} ()
+\item 
+virtual void \hyperlink{classN__Method_a7df4753362b077d86945ce621586deb6}{add\+Exception} (\hyperlink{classN__Exception}{N\+\_\+\+Exception} ex)
+\item 
+virtual std\+::vector$<$ \hyperlink{classN__Exception}{N\+\_\+\+Exception} $>$ \hyperlink{classN__Method_abb334c1b5806d9e9f22a3565de8f0996}{get\+Exceptions} ()
+\item 
+virtual \hyperlink{classN__Param}{N\+\_\+\+Param} \& \hyperlink{classN__Method_a1c889024bf36ad9d4e088a6ca4581a87}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classN__Param}{N\+\_\+\+Param} $>$ \hyperlink{classN__Method_a3c99f1955b023fff1d6a0930496beb7f}{m\+\_\+params}
+\begin{DoxyCompactList}\small\item\em Коллекция параметров метода \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classN__Exception}{N\+\_\+\+Exception} $>$ \hyperlink{classN__Method_aad146c11802d6e438c39377249d7b17d}{exceptions}
+\begin{DoxyCompactList}\small\item\em Коллекция исключений, выкидываемых методом \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Нетерминал, обозначающий метод класса или интерфейса 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classN__Method_a107d80e851cfa8d79723f78995c1c07c}{}\index{N\+\_\+\+Method@{N\+\_\+\+Method}!N\+\_\+\+Method@{N\+\_\+\+Method}}
+\index{N\+\_\+\+Method@{N\+\_\+\+Method}!N\+\_\+\+Method@{N\+\_\+\+Method}}
+\subsubsection[{N\+\_\+\+Method}]{\setlength{\rightskip}{0pt plus 5cm}N\+\_\+\+Method\+::\+N\+\_\+\+Method (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{type, }
+\item[{{\bf Member\+Visibility}}]{vis = {\ttfamily {\bf M\+V\+\_\+\+P\+R\+I\+V\+A\+T\+E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classN__Method_a107d80e851cfa8d79723f78995c1c07c}
+Конструктор 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ имя метода \\
+\hline
+{\em type} & -\/ тип значения, возвращаемого методом \\
+\hline
+{\em vis} & -\/ область видимости метода \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Method_abbaaaf1df2791d4cc1373f8c0a4d6130}{}\index{N\+\_\+\+Method@{N\+\_\+\+Method}!````~N\+\_\+\+Method@{$\sim$\+N\+\_\+\+Method}}
+\index{````~N\+\_\+\+Method@{$\sim$\+N\+\_\+\+Method}!N\+\_\+\+Method@{N\+\_\+\+Method}}
+\subsubsection[{$\sim$\+N\+\_\+\+Method}]{\setlength{\rightskip}{0pt plus 5cm}virtual N\+\_\+\+Method\+::$\sim$\+N\+\_\+\+Method (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Method_abbaaaf1df2791d4cc1373f8c0a4d6130}
+Деструктор 
+
+\subsection{Member Function Documentation}
+\hypertarget{classN__Method_a7df4753362b077d86945ce621586deb6}{}\index{N\+\_\+\+Method@{N\+\_\+\+Method}!add\+Exception@{add\+Exception}}
+\index{add\+Exception@{add\+Exception}!N\+\_\+\+Method@{N\+\_\+\+Method}}
+\subsubsection[{add\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}virtual void N\+\_\+\+Method\+::add\+Exception (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Exception}}]{ex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Method_a7df4753362b077d86945ce621586deb6}
+Добавление исключения 
+\begin{DoxyParams}{Parameters}
+{\em ex} & -\/ исключение, которое необходимо добавить \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Method_a54ec9f1349dd7aa0ccf91da7cf362a2f}{}\index{N\+\_\+\+Method@{N\+\_\+\+Method}!add\+Param@{add\+Param}}
+\index{add\+Param@{add\+Param}!N\+\_\+\+Method@{N\+\_\+\+Method}}
+\subsubsection[{add\+Param}]{\setlength{\rightskip}{0pt plus 5cm}virtual void N\+\_\+\+Method\+::add\+Param (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Param} \&}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Method_a54ec9f1349dd7aa0ccf91da7cf362a2f}
+Добавление параметра метода 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & параметр, который необходимо добавить в метод \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Method_abb334c1b5806d9e9f22a3565de8f0996}{}\index{N\+\_\+\+Method@{N\+\_\+\+Method}!get\+Exceptions@{get\+Exceptions}}
+\index{get\+Exceptions@{get\+Exceptions}!N\+\_\+\+Method@{N\+\_\+\+Method}}
+\subsubsection[{get\+Exceptions}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<${\bf N\+\_\+\+Exception}$>$ N\+\_\+\+Method\+::get\+Exceptions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Method_abb334c1b5806d9e9f22a3565de8f0996}
+Получение коллекции исключений, выкидываемых методом \begin{DoxyReturn}{Returns}
+Коллекция исключений, выкидываемых методом 
+\end{DoxyReturn}
+\hypertarget{classN__Method_aa89de3b7072f61310dd0df6473020066}{}\index{N\+\_\+\+Method@{N\+\_\+\+Method}!get\+Param\+Count@{get\+Param\+Count}}
+\index{get\+Param\+Count@{get\+Param\+Count}!N\+\_\+\+Method@{N\+\_\+\+Method}}
+\subsubsection[{get\+Param\+Count}]{\setlength{\rightskip}{0pt plus 5cm}virtual int N\+\_\+\+Method\+::get\+Param\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Method_aa89de3b7072f61310dd0df6473020066}
+Получение количества параметров метода \begin{DoxyReturn}{Returns}
+Количество параметров метода 
+\end{DoxyReturn}
+\hypertarget{classN__Method_a1c889024bf36ad9d4e088a6ca4581a87}{}\index{N\+\_\+\+Method@{N\+\_\+\+Method}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!N\+\_\+\+Method@{N\+\_\+\+Method}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf N\+\_\+\+Param}\& N\+\_\+\+Method\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Method_a1c889024bf36ad9d4e088a6ca4581a87}
+Получение параметра метода по его номеру 
+\begin{DoxyParams}{Parameters}
+{\em n} & -\/ номер параметра, считая от 0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Выбранный параметр метода 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classN__Method_aad146c11802d6e438c39377249d7b17d}{}\index{N\+\_\+\+Method@{N\+\_\+\+Method}!exceptions@{exceptions}}
+\index{exceptions@{exceptions}!N\+\_\+\+Method@{N\+\_\+\+Method}}
+\subsubsection[{exceptions}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+\_\+\+Exception}$>$ N\+\_\+\+Method\+::exceptions\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Method_aad146c11802d6e438c39377249d7b17d}
+
+
+Коллекция исключений, выкидываемых методом 
+
+\hypertarget{classN__Method_a3c99f1955b023fff1d6a0930496beb7f}{}\index{N\+\_\+\+Method@{N\+\_\+\+Method}!m\+\_\+params@{m\+\_\+params}}
+\index{m\+\_\+params@{m\+\_\+params}!N\+\_\+\+Method@{N\+\_\+\+Method}}
+\subsubsection[{m\+\_\+params}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+\_\+\+Param}$>$ N\+\_\+\+Method\+::m\+\_\+params\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Method_a3c99f1955b023fff1d6a0930496beb7f}
+
+
+Коллекция параметров метода 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ast_8h}{ast.\+h}\end{DoxyCompactItemize}

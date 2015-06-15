@@ -1,0 +1,131 @@
+\hypertarget{classN__Type}{}\section{N\+\_\+\+Type Class Reference}
+\label{classN__Type}\index{N\+\_\+\+Type@{N\+\_\+\+Type}}
+
+
+{\ttfamily \#include $<$ast.\+h$>$}
+
+Inheritance diagram for N\+\_\+\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classN__Type}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classN__Type_acb49f4ac3823f81476aecdc786912927}{N\+\_\+\+Type} (const std\+::string \&name)
+\item 
+\hyperlink{classN__Type_aaadb2c45fb50a87d4bc9e38690606ed5}{N\+\_\+\+Type} (const std\+::string \&name, const std\+::string \&original)
+\item 
+\hyperlink{classN__Type_a3e032190309b0fa6c2f952248693229c}{N\+\_\+\+Type} (const \hyperlink{classN__Type}{N\+\_\+\+Type} \&t)
+\item 
+virtual \hyperlink{classN__Type_a1e16bc2b69f6604bea8f0938717645e7}{$\sim$\+N\+\_\+\+Type} ()
+\item 
+virtual std\+::string \hyperlink{classN__Type_afc6dd4daafea765545a116847ebae9e7}{get\+Aliased\+Type} () const 
+\item 
+virtual bool \hyperlink{classN__Type_a5b3d5eb542b6fd1976d85308eaa88c8e}{is\+Builtin} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classN__Type_af024de34517a3d91855aa863b8954f75}{m\+\_\+builtin}
+\begin{DoxyCompactList}\small\item\em Является ли тип встроенным \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classN__Type_a3498f93c81b4c579e16b6ba70cb957b8}{m\+\_\+aliased\+\_\+type}
+\begin{DoxyCompactList}\small\item\em Исходный тип \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Нетерминал, обозначающий тип данных 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classN__Type_acb49f4ac3823f81476aecdc786912927}{}\index{N\+\_\+\+Type@{N\+\_\+\+Type}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\index{N\+\_\+\+Type@{N\+\_\+\+Type}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\subsubsection[{N\+\_\+\+Type}]{\setlength{\rightskip}{0pt plus 5cm}N\+\_\+\+Type\+::\+N\+\_\+\+Type (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classN__Type_acb49f4ac3823f81476aecdc786912927}
+Конструктор встроенного типа 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ имя типа данных \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Type_aaadb2c45fb50a87d4bc9e38690606ed5}{}\index{N\+\_\+\+Type@{N\+\_\+\+Type}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\index{N\+\_\+\+Type@{N\+\_\+\+Type}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\subsubsection[{N\+\_\+\+Type}]{\setlength{\rightskip}{0pt plus 5cm}N\+\_\+\+Type\+::\+N\+\_\+\+Type (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{original}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classN__Type_aaadb2c45fb50a87d4bc9e38690606ed5}
+Конструктор типа-\/псевдонима 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ имя типа данных \\
+\hline
+{\em original} & -\/ имя исходного типа \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Type_a3e032190309b0fa6c2f952248693229c}{}\index{N\+\_\+\+Type@{N\+\_\+\+Type}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\index{N\+\_\+\+Type@{N\+\_\+\+Type}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\subsubsection[{N\+\_\+\+Type}]{\setlength{\rightskip}{0pt plus 5cm}N\+\_\+\+Type\+::\+N\+\_\+\+Type (
+\begin{DoxyParamCaption}
+\item[{const {\bf N\+\_\+\+Type} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classN__Type_a3e032190309b0fa6c2f952248693229c}
+Копирующий конструктор 
+\begin{DoxyParams}{Parameters}
+{\em t} & -\/ оригинальный экземпляр \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Type_a1e16bc2b69f6604bea8f0938717645e7}{}\index{N\+\_\+\+Type@{N\+\_\+\+Type}!````~N\+\_\+\+Type@{$\sim$\+N\+\_\+\+Type}}
+\index{````~N\+\_\+\+Type@{$\sim$\+N\+\_\+\+Type}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\subsubsection[{$\sim$\+N\+\_\+\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual N\+\_\+\+Type\+::$\sim$\+N\+\_\+\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Type_a1e16bc2b69f6604bea8f0938717645e7}
+Деструктор 
+
+\subsection{Member Function Documentation}
+\hypertarget{classN__Type_afc6dd4daafea765545a116847ebae9e7}{}\index{N\+\_\+\+Type@{N\+\_\+\+Type}!get\+Aliased\+Type@{get\+Aliased\+Type}}
+\index{get\+Aliased\+Type@{get\+Aliased\+Type}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\subsubsection[{get\+Aliased\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string N\+\_\+\+Type\+::get\+Aliased\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Type_afc6dd4daafea765545a116847ebae9e7}
+Получение имени исходного типа \begin{DoxyReturn}{Returns}
+имя исходного типа 
+\end{DoxyReturn}
+\hypertarget{classN__Type_a5b3d5eb542b6fd1976d85308eaa88c8e}{}\index{N\+\_\+\+Type@{N\+\_\+\+Type}!is\+Builtin@{is\+Builtin}}
+\index{is\+Builtin@{is\+Builtin}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\subsubsection[{is\+Builtin}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool N\+\_\+\+Type\+::is\+Builtin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Type_a5b3d5eb542b6fd1976d85308eaa88c8e}
+Является ли тип встроенным \begin{DoxyReturn}{Returns}
+true, если тип встроенный, иначе false 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classN__Type_a3498f93c81b4c579e16b6ba70cb957b8}{}\index{N\+\_\+\+Type@{N\+\_\+\+Type}!m\+\_\+aliased\+\_\+type@{m\+\_\+aliased\+\_\+type}}
+\index{m\+\_\+aliased\+\_\+type@{m\+\_\+aliased\+\_\+type}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\subsubsection[{m\+\_\+aliased\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string N\+\_\+\+Type\+::m\+\_\+aliased\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Type_a3498f93c81b4c579e16b6ba70cb957b8}
+
+
+Исходный тип 
+
+\hypertarget{classN__Type_af024de34517a3d91855aa863b8954f75}{}\index{N\+\_\+\+Type@{N\+\_\+\+Type}!m\+\_\+builtin@{m\+\_\+builtin}}
+\index{m\+\_\+builtin@{m\+\_\+builtin}!N\+\_\+\+Type@{N\+\_\+\+Type}}
+\subsubsection[{m\+\_\+builtin}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+\_\+\+Type\+::m\+\_\+builtin\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Type_af024de34517a3d91855aa863b8954f75}
+
+
+Является ли тип встроенным 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ast_8h}{ast.\+h}\end{DoxyCompactItemize}

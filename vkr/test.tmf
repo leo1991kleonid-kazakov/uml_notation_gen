@@ -1,0 +1,52 @@
+model TestModel
+{
+	option lang = java; 
+	option quiet;
+	use std;
+	type int builtin;
+	type content_type_t -> int;
+	
+	type LockedException -> std::exception;
+	
+	interface Container {
+	}
+	
+	interface LockableContainer -> Container {
+	}
+	
+	interface Movable {
+		+getX(): int;
+		+getY(): int;
+		+getXY(x: int out, y: int out);
+		+setXY(x: int in, y: int in);
+		+setX(x: int);
+		+setY(y: int);
+	}
+	
+	interface Browseable {
+		+browse(): content_type_t throw LockedException;
+	}
+	
+	class Chest -> LockableContainer, Browseable {
+		#content: content_type_t;
+	}
+	
+	class MovableChest => Chest -> Movable {
+		#x: int;
+		#y: int;
+	}
+
+	type ChestArray -> Chest[];
+
+	class MovableChestArray {
+		#chests: MovableChest[];
+		#chestCount: int;
+		+getChests(): MovableChest[];
+		+addChest(mc: MovableChest inout);
+		+getChestCount(): int;
+		+createMovableChestArray(num: int) static;
+		+MovableChestArray(size: int) <<constructor>>;
+		+MovableChestArray() <<destructor>>;
+	}
+	
+}

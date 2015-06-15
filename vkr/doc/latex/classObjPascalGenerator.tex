@@ -1,0 +1,207 @@
+\hypertarget{classObjPascalGenerator}{}\section{Obj\+Pascal\+Generator Class Reference}
+\label{classObjPascalGenerator}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+
+
+{\ttfamily \#include $<$ast.\+h$>$}
+
+Inheritance diagram for Obj\+Pascal\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classObjPascalGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classObjPascalGenerator_a83c889dac4b29dc7979fbf06fc0fe06a}{$\sim$\+Obj\+Pascal\+Generator} ()
+\item 
+virtual void \hyperlink{classObjPascalGenerator_a8129a8aab5c9b1f8dab3bb3c4de460d0}{generate} (\hyperlink{classN__Model}{N\+\_\+\+Model} \&m)
+\item 
+virtual std\+::string \hyperlink{classObjPascalGenerator_a833b2caffb9da2595a9f447bc6264ecf}{gen\+Interface} (\hyperlink{classN__Interface}{N\+\_\+\+Interface} $\ast$c)
+\item 
+virtual std\+::string \hyperlink{classObjPascalGenerator_a0bb3fad2c4df2a741c96d37d1e2d4449}{gen\+Field} (\hyperlink{classN__Field}{N\+\_\+\+Field} $\ast$f)
+\item 
+virtual std\+::string \hyperlink{classObjPascalGenerator_a4fa9c56ef03cc1999ce178fabedebb60}{gen\+Method} (\hyperlink{classN__Method}{N\+\_\+\+Method} $\ast$m)
+\item 
+virtual std\+::string \hyperlink{classObjPascalGenerator_a1c6095fef516716336de164da25da1e2}{gen\+Method\+Header} (\hyperlink{classN__Method}{N\+\_\+\+Method} $\ast$m)
+\item 
+virtual std\+::string \hyperlink{classObjPascalGenerator_a1f6ec48b26e0a002816737220a6eb26d}{gen\+Parameter} (\hyperlink{classN__Param}{N\+\_\+\+Param} $\ast$p)
+\item 
+virtual std\+::string \hyperlink{classObjPascalGenerator_a690ce15adcc6d94fc994737f1acdfac7}{gen\+Class} (\hyperlink{classN__Class}{N\+\_\+\+Class} $\ast$c)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObjPascalGenerator_ab69aa8ddff1ff4b2a087e1988c206ae7}{Obj\+Pascal\+Generator} (std\+::ostream \&os)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classObjPascalGenerator_a366b7823e659ab78d952a7d79662a4d6}{Generator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Генератор кода на Object\+Pascal 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classObjPascalGenerator_ab69aa8ddff1ff4b2a087e1988c206ae7}{}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\subsubsection[{Obj\+Pascal\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}Obj\+Pascal\+Generator\+::\+Obj\+Pascal\+Generator (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classObjPascalGenerator_ab69aa8ddff1ff4b2a087e1988c206ae7}
+\hypertarget{classObjPascalGenerator_a83c889dac4b29dc7979fbf06fc0fe06a}{}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!````~Obj\+Pascal\+Generator@{$\sim$\+Obj\+Pascal\+Generator}}
+\index{````~Obj\+Pascal\+Generator@{$\sim$\+Obj\+Pascal\+Generator}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\subsubsection[{$\sim$\+Obj\+Pascal\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}virtual Obj\+Pascal\+Generator\+::$\sim$\+Obj\+Pascal\+Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classObjPascalGenerator_a83c889dac4b29dc7979fbf06fc0fe06a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classObjPascalGenerator_a690ce15adcc6d94fc994737f1acdfac7}{}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!gen\+Class@{gen\+Class}}
+\index{gen\+Class@{gen\+Class}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\subsubsection[{gen\+Class}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Obj\+Pascal\+Generator\+::gen\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Class} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classObjPascalGenerator_a690ce15adcc6d94fc994737f1acdfac7}
+Генератор шаблона класса 
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ класс, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_afac361fceae302fb09e8170d097415d4}{Generator}.
+
+\hypertarget{classObjPascalGenerator_a8129a8aab5c9b1f8dab3bb3c4de460d0}{}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!generate@{generate}}
+\index{generate@{generate}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}void Obj\+Pascal\+Generator\+::generate (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Model} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classObjPascalGenerator_a8129a8aab5c9b1f8dab3bb3c4de460d0}
+Генератор шаблона модели 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ модель, для которой необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classGenerator_a518161ca79e68d733687f8e2985abd16}{Generator}.
+
+\hypertarget{classObjPascalGenerator_a0bb3fad2c4df2a741c96d37d1e2d4449}{}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!gen\+Field@{gen\+Field}}
+\index{gen\+Field@{gen\+Field}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\subsubsection[{gen\+Field}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Obj\+Pascal\+Generator\+::gen\+Field (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Field} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classObjPascalGenerator_a0bb3fad2c4df2a741c96d37d1e2d4449}
+Генератор шаблона поля класса 
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ поле, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_aa2871c303fba42abd61a7ed997d23416}{Generator}.
+
+\hypertarget{classObjPascalGenerator_a833b2caffb9da2595a9f447bc6264ecf}{}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!gen\+Interface@{gen\+Interface}}
+\index{gen\+Interface@{gen\+Interface}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\subsubsection[{gen\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Obj\+Pascal\+Generator\+::gen\+Interface (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Interface} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classObjPascalGenerator_a833b2caffb9da2595a9f447bc6264ecf}
+Генератор шаблона интерфейса 
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ интерфейс, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_ad0f09fcc0e99e78e04f8c202cd0ce881}{Generator}.
+
+\hypertarget{classObjPascalGenerator_a4fa9c56ef03cc1999ce178fabedebb60}{}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!gen\+Method@{gen\+Method}}
+\index{gen\+Method@{gen\+Method}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\subsubsection[{gen\+Method}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Obj\+Pascal\+Generator\+::gen\+Method (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Method} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classObjPascalGenerator_a4fa9c56ef03cc1999ce178fabedebb60}
+Генератор шаблона метода 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ метод, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_a2b09ae359674038af5286fbd03d83c41}{Generator}.
+
+\hypertarget{classObjPascalGenerator_a1c6095fef516716336de164da25da1e2}{}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!gen\+Method\+Header@{gen\+Method\+Header}}
+\index{gen\+Method\+Header@{gen\+Method\+Header}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\subsubsection[{gen\+Method\+Header}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Obj\+Pascal\+Generator\+::gen\+Method\+Header (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Method} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classObjPascalGenerator_a1c6095fef516716336de164da25da1e2}
+Генератор шаблона заголовка метода 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ метод, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_aede7f5343c5bcd88b5fc8bfe51d17bce}{Generator}.
+
+\hypertarget{classObjPascalGenerator_a1f6ec48b26e0a002816737220a6eb26d}{}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!gen\+Parameter@{gen\+Parameter}}
+\index{gen\+Parameter@{gen\+Parameter}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\subsubsection[{gen\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Obj\+Pascal\+Generator\+::gen\+Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Param} $\ast$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classObjPascalGenerator_a1f6ec48b26e0a002816737220a6eb26d}
+Генератор шаблона параметра метода 
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ параметр, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_ac9871b3d5874cb81a98a3e5eb3b703e2}{Generator}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classObjPascalGenerator_a366b7823e659ab78d952a7d79662a4d6}{}\index{Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}!Generator@{Generator}}
+\index{Generator@{Generator}!Obj\+Pascal\+Generator@{Obj\+Pascal\+Generator}}
+\subsubsection[{Generator}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Generator}\hspace{0.3cm}{\ttfamily [friend]}}\label{classObjPascalGenerator_a366b7823e659ab78d952a7d79662a4d6}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ast_8h}{ast.\+h}\item 
+\hyperlink{ast_8cpp}{ast.\+cpp}\end{DoxyCompactItemize}

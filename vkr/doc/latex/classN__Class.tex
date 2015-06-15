@@ -1,0 +1,128 @@
+\hypertarget{classN__Class}{}\section{N\+\_\+\+Class Class Reference}
+\label{classN__Class}\index{N\+\_\+\+Class@{N\+\_\+\+Class}}
+
+
+{\ttfamily \#include $<$ast.\+h$>$}
+
+Inheritance diagram for N\+\_\+\+Class\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classN__Class}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classN__Class_a3f3a1254f6370fcee748a50e460b0da4}{N\+\_\+\+Class} (std\+::string name)
+\item 
+virtual \hyperlink{classN__Class_a141071f7db3aba8a98af0e67d711d046}{$\sim$\+N\+\_\+\+Class} ()
+\item 
+virtual void \hyperlink{classN__Class_ae6be664192857da779ff575019321304}{add\+Field} (\hyperlink{classN__Field}{N\+\_\+\+Field} field)
+\item 
+virtual std\+::vector$<$ \hyperlink{classN__Field}{N\+\_\+\+Field} $>$ \hyperlink{classN__Class_a5caf6d52ac2fd564e1fa1c4a6b4e00f8}{get\+Fields} ()
+\item 
+virtual void \hyperlink{classN__Class_a2f6d7f3cbe120e4b38520fb1c95e4f42}{add\+Ancestor\+Class} (\hyperlink{classN__Class}{N\+\_\+\+Class} \&c)
+\item 
+virtual std\+::vector$<$ \hyperlink{classN__Class}{N\+\_\+\+Class} $>$ \hyperlink{classN__Class_aa27ad0ec290cf7dea9a479524e4b0192}{get\+Ancestor\+Classes} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classN__Field}{N\+\_\+\+Field} $>$ \hyperlink{classN__Class_acafc087764ee9469711513ff7abc132f}{m\+\_\+fields}
+\begin{DoxyCompactList}\small\item\em Коллекция полей класса \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classN__Class}{N\+\_\+\+Class} $>$ \hyperlink{classN__Class_a643715744802bdaf7dd9fc4712036703}{m\+\_\+ancestor\+\_\+classes}
+\begin{DoxyCompactList}\small\item\em Коллекция классов-\/предков \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Нетерминал, обозначающий класс. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classN__Class_a3f3a1254f6370fcee748a50e460b0da4}{}\index{N\+\_\+\+Class@{N\+\_\+\+Class}!N\+\_\+\+Class@{N\+\_\+\+Class}}
+\index{N\+\_\+\+Class@{N\+\_\+\+Class}!N\+\_\+\+Class@{N\+\_\+\+Class}}
+\subsubsection[{N\+\_\+\+Class}]{\setlength{\rightskip}{0pt plus 5cm}N\+\_\+\+Class\+::\+N\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classN__Class_a3f3a1254f6370fcee748a50e460b0da4}
+Конструктор 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ имя класса \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Class_a141071f7db3aba8a98af0e67d711d046}{}\index{N\+\_\+\+Class@{N\+\_\+\+Class}!````~N\+\_\+\+Class@{$\sim$\+N\+\_\+\+Class}}
+\index{````~N\+\_\+\+Class@{$\sim$\+N\+\_\+\+Class}!N\+\_\+\+Class@{N\+\_\+\+Class}}
+\subsubsection[{$\sim$\+N\+\_\+\+Class}]{\setlength{\rightskip}{0pt plus 5cm}virtual N\+\_\+\+Class\+::$\sim$\+N\+\_\+\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Class_a141071f7db3aba8a98af0e67d711d046}
+Деструктор 
+
+\subsection{Member Function Documentation}
+\hypertarget{classN__Class_a2f6d7f3cbe120e4b38520fb1c95e4f42}{}\index{N\+\_\+\+Class@{N\+\_\+\+Class}!add\+Ancestor\+Class@{add\+Ancestor\+Class}}
+\index{add\+Ancestor\+Class@{add\+Ancestor\+Class}!N\+\_\+\+Class@{N\+\_\+\+Class}}
+\subsubsection[{add\+Ancestor\+Class}]{\setlength{\rightskip}{0pt plus 5cm}virtual void N\+\_\+\+Class\+::add\+Ancestor\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Class} \&}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Class_a2f6d7f3cbe120e4b38520fb1c95e4f42}
+Добавление класса-\/предка 
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ класс, который необходимо добавить в качестве предка \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Class_ae6be664192857da779ff575019321304}{}\index{N\+\_\+\+Class@{N\+\_\+\+Class}!add\+Field@{add\+Field}}
+\index{add\+Field@{add\+Field}!N\+\_\+\+Class@{N\+\_\+\+Class}}
+\subsubsection[{add\+Field}]{\setlength{\rightskip}{0pt plus 5cm}virtual void N\+\_\+\+Class\+::add\+Field (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Field}}]{field}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Class_ae6be664192857da779ff575019321304}
+Добавление поля в класс 
+\begin{DoxyParams}{Parameters}
+{\em field} & -\/ поле, которе необходимо добавить в класс \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Class_aa27ad0ec290cf7dea9a479524e4b0192}{}\index{N\+\_\+\+Class@{N\+\_\+\+Class}!get\+Ancestor\+Classes@{get\+Ancestor\+Classes}}
+\index{get\+Ancestor\+Classes@{get\+Ancestor\+Classes}!N\+\_\+\+Class@{N\+\_\+\+Class}}
+\subsubsection[{get\+Ancestor\+Classes}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<${\bf N\+\_\+\+Class}$>$ N\+\_\+\+Class\+::get\+Ancestor\+Classes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Class_aa27ad0ec290cf7dea9a479524e4b0192}
+Получение коллекции классов-\/предков \begin{DoxyReturn}{Returns}
+Коллекция классов-\/предков 
+\end{DoxyReturn}
+\hypertarget{classN__Class_a5caf6d52ac2fd564e1fa1c4a6b4e00f8}{}\index{N\+\_\+\+Class@{N\+\_\+\+Class}!get\+Fields@{get\+Fields}}
+\index{get\+Fields@{get\+Fields}!N\+\_\+\+Class@{N\+\_\+\+Class}}
+\subsubsection[{get\+Fields}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<${\bf N\+\_\+\+Field}$>$ N\+\_\+\+Class\+::get\+Fields (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Class_a5caf6d52ac2fd564e1fa1c4a6b4e00f8}
+Получение коллекции полей класса \begin{DoxyReturn}{Returns}
+Коллекция полей класса 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classN__Class_a643715744802bdaf7dd9fc4712036703}{}\index{N\+\_\+\+Class@{N\+\_\+\+Class}!m\+\_\+ancestor\+\_\+classes@{m\+\_\+ancestor\+\_\+classes}}
+\index{m\+\_\+ancestor\+\_\+classes@{m\+\_\+ancestor\+\_\+classes}!N\+\_\+\+Class@{N\+\_\+\+Class}}
+\subsubsection[{m\+\_\+ancestor\+\_\+classes}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+\_\+\+Class}$>$ N\+\_\+\+Class\+::m\+\_\+ancestor\+\_\+classes\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Class_a643715744802bdaf7dd9fc4712036703}
+
+
+Коллекция классов-\/предков 
+
+\hypertarget{classN__Class_acafc087764ee9469711513ff7abc132f}{}\index{N\+\_\+\+Class@{N\+\_\+\+Class}!m\+\_\+fields@{m\+\_\+fields}}
+\index{m\+\_\+fields@{m\+\_\+fields}!N\+\_\+\+Class@{N\+\_\+\+Class}}
+\subsubsection[{m\+\_\+fields}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+\_\+\+Field}$>$ N\+\_\+\+Class\+::m\+\_\+fields\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Class_acafc087764ee9469711513ff7abc132f}
+
+
+Коллекция полей класса 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ast_8h}{ast.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,207 @@
+\hypertarget{classJavaGenerator}{}\section{Java\+Generator Class Reference}
+\label{classJavaGenerator}\index{Java\+Generator@{Java\+Generator}}
+
+
+{\ttfamily \#include $<$ast.\+h$>$}
+
+Inheritance diagram for Java\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classJavaGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classJavaGenerator_abe76750a970b9dcdd25c6c9192df835e}{$\sim$\+Java\+Generator} ()
+\item 
+virtual void \hyperlink{classJavaGenerator_a9a920fcd472a9afd7eb44fb5f76d60af}{generate} (\hyperlink{classN__Model}{N\+\_\+\+Model} \&m)
+\item 
+virtual std\+::string \hyperlink{classJavaGenerator_a08be7bd01581127d1d6b7f1ca388aa8c}{gen\+Interface} (\hyperlink{classN__Interface}{N\+\_\+\+Interface} $\ast$c)
+\item 
+virtual std\+::string \hyperlink{classJavaGenerator_ac86377f3b08c88d53ee1669c8b623f8e}{gen\+Field} (\hyperlink{classN__Field}{N\+\_\+\+Field} $\ast$f)
+\item 
+virtual std\+::string \hyperlink{classJavaGenerator_af49a575754a670af62b8c38a87c62383}{gen\+Method} (\hyperlink{classN__Method}{N\+\_\+\+Method} $\ast$m)
+\item 
+virtual std\+::string \hyperlink{classJavaGenerator_af69f42b427c011da412d987ca5b87bd5}{gen\+Method\+Header} (\hyperlink{classN__Method}{N\+\_\+\+Method} $\ast$m)
+\item 
+virtual std\+::string \hyperlink{classJavaGenerator_a3431b1f8d251ab7a5a45ee3e809213ff}{gen\+Parameter} (\hyperlink{classN__Param}{N\+\_\+\+Param} $\ast$p)
+\item 
+virtual std\+::string \hyperlink{classJavaGenerator_afe0fee40e5af2729afaae8b392c7e0db}{gen\+Class} (\hyperlink{classN__Class}{N\+\_\+\+Class} $\ast$c)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classJavaGenerator_ac7274498d758221f160aced6ba3e62f8}{Java\+Generator} (std\+::ostream \&os)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classJavaGenerator_a366b7823e659ab78d952a7d79662a4d6}{Generator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Генератор кода на Java 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classJavaGenerator_ac7274498d758221f160aced6ba3e62f8}{}\index{Java\+Generator@{Java\+Generator}!Java\+Generator@{Java\+Generator}}
+\index{Java\+Generator@{Java\+Generator}!Java\+Generator@{Java\+Generator}}
+\subsubsection[{Java\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}Java\+Generator\+::\+Java\+Generator (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classJavaGenerator_ac7274498d758221f160aced6ba3e62f8}
+\hypertarget{classJavaGenerator_abe76750a970b9dcdd25c6c9192df835e}{}\index{Java\+Generator@{Java\+Generator}!````~Java\+Generator@{$\sim$\+Java\+Generator}}
+\index{````~Java\+Generator@{$\sim$\+Java\+Generator}!Java\+Generator@{Java\+Generator}}
+\subsubsection[{$\sim$\+Java\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}virtual Java\+Generator\+::$\sim$\+Java\+Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classJavaGenerator_abe76750a970b9dcdd25c6c9192df835e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classJavaGenerator_afe0fee40e5af2729afaae8b392c7e0db}{}\index{Java\+Generator@{Java\+Generator}!gen\+Class@{gen\+Class}}
+\index{gen\+Class@{gen\+Class}!Java\+Generator@{Java\+Generator}}
+\subsubsection[{gen\+Class}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Java\+Generator\+::gen\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Class} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classJavaGenerator_afe0fee40e5af2729afaae8b392c7e0db}
+Генератор шаблона класса 
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ класс, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_afac361fceae302fb09e8170d097415d4}{Generator}.
+
+\hypertarget{classJavaGenerator_a9a920fcd472a9afd7eb44fb5f76d60af}{}\index{Java\+Generator@{Java\+Generator}!generate@{generate}}
+\index{generate@{generate}!Java\+Generator@{Java\+Generator}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}void Java\+Generator\+::generate (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Model} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classJavaGenerator_a9a920fcd472a9afd7eb44fb5f76d60af}
+Генератор шаблона модели 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ модель, для которой необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classGenerator_a518161ca79e68d733687f8e2985abd16}{Generator}.
+
+\hypertarget{classJavaGenerator_ac86377f3b08c88d53ee1669c8b623f8e}{}\index{Java\+Generator@{Java\+Generator}!gen\+Field@{gen\+Field}}
+\index{gen\+Field@{gen\+Field}!Java\+Generator@{Java\+Generator}}
+\subsubsection[{gen\+Field}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Java\+Generator\+::gen\+Field (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Field} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classJavaGenerator_ac86377f3b08c88d53ee1669c8b623f8e}
+Генератор шаблона поля класса 
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ поле, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_aa2871c303fba42abd61a7ed997d23416}{Generator}.
+
+\hypertarget{classJavaGenerator_a08be7bd01581127d1d6b7f1ca388aa8c}{}\index{Java\+Generator@{Java\+Generator}!gen\+Interface@{gen\+Interface}}
+\index{gen\+Interface@{gen\+Interface}!Java\+Generator@{Java\+Generator}}
+\subsubsection[{gen\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Java\+Generator\+::gen\+Interface (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Interface} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classJavaGenerator_a08be7bd01581127d1d6b7f1ca388aa8c}
+Генератор шаблона интерфейса 
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ интерфейс, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_ad0f09fcc0e99e78e04f8c202cd0ce881}{Generator}.
+
+\hypertarget{classJavaGenerator_af49a575754a670af62b8c38a87c62383}{}\index{Java\+Generator@{Java\+Generator}!gen\+Method@{gen\+Method}}
+\index{gen\+Method@{gen\+Method}!Java\+Generator@{Java\+Generator}}
+\subsubsection[{gen\+Method}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Java\+Generator\+::gen\+Method (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Method} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classJavaGenerator_af49a575754a670af62b8c38a87c62383}
+Генератор шаблона метода 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ метод, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_a2b09ae359674038af5286fbd03d83c41}{Generator}.
+
+\hypertarget{classJavaGenerator_af69f42b427c011da412d987ca5b87bd5}{}\index{Java\+Generator@{Java\+Generator}!gen\+Method\+Header@{gen\+Method\+Header}}
+\index{gen\+Method\+Header@{gen\+Method\+Header}!Java\+Generator@{Java\+Generator}}
+\subsubsection[{gen\+Method\+Header}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Java\+Generator\+::gen\+Method\+Header (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Method} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classJavaGenerator_af69f42b427c011da412d987ca5b87bd5}
+Генератор шаблона заголовка метода 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ метод, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_aede7f5343c5bcd88b5fc8bfe51d17bce}{Generator}.
+
+\hypertarget{classJavaGenerator_a3431b1f8d251ab7a5a45ee3e809213ff}{}\index{Java\+Generator@{Java\+Generator}!gen\+Parameter@{gen\+Parameter}}
+\index{gen\+Parameter@{gen\+Parameter}!Java\+Generator@{Java\+Generator}}
+\subsubsection[{gen\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Java\+Generator\+::gen\+Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Param} $\ast$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classJavaGenerator_a3431b1f8d251ab7a5a45ee3e809213ff}
+Генератор шаблона параметра метода 
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ параметр, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGenerator_ac9871b3d5874cb81a98a3e5eb3b703e2}{Generator}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classJavaGenerator_a366b7823e659ab78d952a7d79662a4d6}{}\index{Java\+Generator@{Java\+Generator}!Generator@{Generator}}
+\index{Generator@{Generator}!Java\+Generator@{Java\+Generator}}
+\subsubsection[{Generator}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Generator}\hspace{0.3cm}{\ttfamily [friend]}}\label{classJavaGenerator_a366b7823e659ab78d952a7d79662a4d6}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ast_8h}{ast.\+h}\item 
+\hyperlink{ast_8cpp}{ast.\+cpp}\end{DoxyCompactItemize}

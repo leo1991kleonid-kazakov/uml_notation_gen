@@ -1,0 +1,264 @@
+\hypertarget{classGenerator}{}\section{Generator Class Reference}
+\label{classGenerator}\index{Generator@{Generator}}
+
+
+{\ttfamily \#include $<$ast.\+h$>$}
+
+Inheritance diagram for Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classGenerator_a518161ca79e68d733687f8e2985abd16}{generate} (\hyperlink{classN__Model}{N\+\_\+\+Model} \&m)=0
+\item 
+virtual std\+::string \hyperlink{classGenerator_ad0f09fcc0e99e78e04f8c202cd0ce881}{gen\+Interface} (\hyperlink{classN__Interface}{N\+\_\+\+Interface} $\ast$c)=0
+\item 
+virtual std\+::string \hyperlink{classGenerator_aa2871c303fba42abd61a7ed997d23416}{gen\+Field} (\hyperlink{classN__Field}{N\+\_\+\+Field} $\ast$f)=0
+\item 
+virtual std\+::string \hyperlink{classGenerator_a2b09ae359674038af5286fbd03d83c41}{gen\+Method} (\hyperlink{classN__Method}{N\+\_\+\+Method} $\ast$m)=0
+\item 
+virtual std\+::string \hyperlink{classGenerator_aede7f5343c5bcd88b5fc8bfe51d17bce}{gen\+Method\+Header} (\hyperlink{classN__Method}{N\+\_\+\+Method} $\ast$m)=0
+\item 
+virtual std\+::string \hyperlink{classGenerator_ac9871b3d5874cb81a98a3e5eb3b703e2}{gen\+Parameter} (\hyperlink{classN__Param}{N\+\_\+\+Param} $\ast$p)=0
+\item 
+virtual std\+::string \hyperlink{classGenerator_afac361fceae302fb09e8170d097415d4}{gen\+Class} (\hyperlink{classN__Class}{N\+\_\+\+Class} $\ast$c)=0
+\item 
+virtual \hyperlink{classGenerator_aeb355d65ed59bc5738a5b3e9637186e1}{$\sim$\+Generator} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classGenerator}{Generator} $\ast$ \hyperlink{classGenerator_a8a97794e699a220d5833589d966eb28b}{create} (\hyperlink{ast_8h_a315ca917ad583797f709ea477dd28705}{Language} lang, std\+::ostream \&os)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenerator_a28efb1004a6a78f811a4d7b74f568169}{Generator} (std\+::ostream \&os)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classGenerator_a66fe842aa93b878a74c96fb0852d4626}{m\+\_\+os}
+\begin{DoxyCompactList}\small\item\em Поток вывода шаблона \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classGenerator_a5b6ac73277bce0e06ed614d1202031e1}{operator$<$$<$} (\hyperlink{classGenerator}{Generator} \&os, const \hyperlink{classN__ModelMember}{N\+\_\+\+Model\+Member} \&mm)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Абстрактный класс генератора шаблона кода 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGenerator_a28efb1004a6a78f811a4d7b74f568169}{}\index{Generator@{Generator}!Generator@{Generator}}
+\index{Generator@{Generator}!Generator@{Generator}}
+\subsubsection[{Generator}]{\setlength{\rightskip}{0pt plus 5cm}Generator\+::\+Generator (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [protected]}}\label{classGenerator_a28efb1004a6a78f811a4d7b74f568169}
+Конструктор 
+\begin{DoxyParams}{Parameters}
+{\em os} & -\/ поток, в который необходимо выдавать шаблон \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGenerator_aeb355d65ed59bc5738a5b3e9637186e1}{}\index{Generator@{Generator}!````~Generator@{$\sim$\+Generator}}
+\index{````~Generator@{$\sim$\+Generator}!Generator@{Generator}}
+\subsubsection[{$\sim$\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}virtual Generator\+::$\sim$\+Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classGenerator_aeb355d65ed59bc5738a5b3e9637186e1}
+Деструктор 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGenerator_a8a97794e699a220d5833589d966eb28b}{}\index{Generator@{Generator}!create@{create}}
+\index{create@{create}!Generator@{Generator}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Generator} $\ast$ Generator\+::create (
+\begin{DoxyParamCaption}
+\item[{{\bf Language}}]{lang, }
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classGenerator_a8a97794e699a220d5833589d966eb28b}
+Классовый метод для создания экземпляра генератора 
+\begin{DoxyParams}{Parameters}
+{\em lang} & -\/ язык, для которого требуется создать генератор \\
+\hline
+{\em os} & -\/ поток вывода, в который предполагается выводить шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Экземпляр генератора 
+\end{DoxyReturn}
+\hypertarget{classGenerator_afac361fceae302fb09e8170d097415d4}{}\index{Generator@{Generator}!gen\+Class@{gen\+Class}}
+\index{gen\+Class@{gen\+Class}!Generator@{Generator}}
+\subsubsection[{gen\+Class}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Generator\+::gen\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Class} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGenerator_afac361fceae302fb09e8170d097415d4}
+Генератор шаблона класса 
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ класс, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classObjPascalGenerator_a690ce15adcc6d94fc994737f1acdfac7}{Obj\+Pascal\+Generator}, \hyperlink{classPascalGenerator_ae8bf162efb54e857c9a61bf9aae5f6e4}{Pascal\+Generator}, \hyperlink{classJavaGenerator_afe0fee40e5af2729afaae8b392c7e0db}{Java\+Generator}, and \hyperlink{classCppGenerator_aff63ea51beb1daf7e6ec0c72628e9e6f}{Cpp\+Generator}.
+
+\hypertarget{classGenerator_a518161ca79e68d733687f8e2985abd16}{}\index{Generator@{Generator}!generate@{generate}}
+\index{generate@{generate}!Generator@{Generator}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Generator\+::generate (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Model} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGenerator_a518161ca79e68d733687f8e2985abd16}
+Генератор шаблона модели 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ модель, для которой необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classObjPascalGenerator_a8129a8aab5c9b1f8dab3bb3c4de460d0}{Obj\+Pascal\+Generator}, \hyperlink{classPascalGenerator_af0d2d3b1fbf63c8c4859b446541337c5}{Pascal\+Generator}, \hyperlink{classJavaGenerator_a9a920fcd472a9afd7eb44fb5f76d60af}{Java\+Generator}, and \hyperlink{classCppGenerator_a32c3cf7f72e81b52b6937a1dcaef865d}{Cpp\+Generator}.
+
+\hypertarget{classGenerator_aa2871c303fba42abd61a7ed997d23416}{}\index{Generator@{Generator}!gen\+Field@{gen\+Field}}
+\index{gen\+Field@{gen\+Field}!Generator@{Generator}}
+\subsubsection[{gen\+Field}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Generator\+::gen\+Field (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Field} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGenerator_aa2871c303fba42abd61a7ed997d23416}
+Генератор шаблона поля класса 
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ поле, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classObjPascalGenerator_a0bb3fad2c4df2a741c96d37d1e2d4449}{Obj\+Pascal\+Generator}, \hyperlink{classPascalGenerator_a2518deea7c307b53d2f5569653772df4}{Pascal\+Generator}, \hyperlink{classJavaGenerator_ac86377f3b08c88d53ee1669c8b623f8e}{Java\+Generator}, and \hyperlink{classCppGenerator_aedb02142a2bcdd47dc6575d317ce5408}{Cpp\+Generator}.
+
+\hypertarget{classGenerator_ad0f09fcc0e99e78e04f8c202cd0ce881}{}\index{Generator@{Generator}!gen\+Interface@{gen\+Interface}}
+\index{gen\+Interface@{gen\+Interface}!Generator@{Generator}}
+\subsubsection[{gen\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Generator\+::gen\+Interface (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Interface} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGenerator_ad0f09fcc0e99e78e04f8c202cd0ce881}
+Генератор шаблона интерфейса 
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ интерфейс, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classObjPascalGenerator_a833b2caffb9da2595a9f447bc6264ecf}{Obj\+Pascal\+Generator}, \hyperlink{classPascalGenerator_a45d98b0d7ee0cba9708bbce1cc6e81a8}{Pascal\+Generator}, \hyperlink{classJavaGenerator_a08be7bd01581127d1d6b7f1ca388aa8c}{Java\+Generator}, and \hyperlink{classCppGenerator_a0befaf088820c9e3b9432457f9c775db}{Cpp\+Generator}.
+
+\hypertarget{classGenerator_a2b09ae359674038af5286fbd03d83c41}{}\index{Generator@{Generator}!gen\+Method@{gen\+Method}}
+\index{gen\+Method@{gen\+Method}!Generator@{Generator}}
+\subsubsection[{gen\+Method}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Generator\+::gen\+Method (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Method} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGenerator_a2b09ae359674038af5286fbd03d83c41}
+Генератор шаблона метода 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ метод, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classObjPascalGenerator_a4fa9c56ef03cc1999ce178fabedebb60}{Obj\+Pascal\+Generator}, \hyperlink{classPascalGenerator_a676b9e2ca462c770d6eab2cd9150d078}{Pascal\+Generator}, \hyperlink{classJavaGenerator_af49a575754a670af62b8c38a87c62383}{Java\+Generator}, and \hyperlink{classCppGenerator_a25aeb086603decc6941c8a02c52ad90e}{Cpp\+Generator}.
+
+\hypertarget{classGenerator_aede7f5343c5bcd88b5fc8bfe51d17bce}{}\index{Generator@{Generator}!gen\+Method\+Header@{gen\+Method\+Header}}
+\index{gen\+Method\+Header@{gen\+Method\+Header}!Generator@{Generator}}
+\subsubsection[{gen\+Method\+Header}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Generator\+::gen\+Method\+Header (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Method} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGenerator_aede7f5343c5bcd88b5fc8bfe51d17bce}
+Генератор шаблона заголовка метода 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ метод, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classObjPascalGenerator_a1c6095fef516716336de164da25da1e2}{Obj\+Pascal\+Generator}, \hyperlink{classPascalGenerator_a588bf9c593871ccf52f5ab66d2b25258}{Pascal\+Generator}, \hyperlink{classJavaGenerator_af69f42b427c011da412d987ca5b87bd5}{Java\+Generator}, and \hyperlink{classCppGenerator_ad4cf3df3310368d485dac04a41505028}{Cpp\+Generator}.
+
+\hypertarget{classGenerator_ac9871b3d5874cb81a98a3e5eb3b703e2}{}\index{Generator@{Generator}!gen\+Parameter@{gen\+Parameter}}
+\index{gen\+Parameter@{gen\+Parameter}!Generator@{Generator}}
+\subsubsection[{gen\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Generator\+::gen\+Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Param} $\ast$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGenerator_ac9871b3d5874cb81a98a3e5eb3b703e2}
+Генератор шаблона параметра метода 
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ параметр, для которого необходимо сгенерировать шаблон \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сгенерированный шаблон 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classObjPascalGenerator_a1f6ec48b26e0a002816737220a6eb26d}{Obj\+Pascal\+Generator}, \hyperlink{classPascalGenerator_a4498120ec4549002fb575316f1f58257}{Pascal\+Generator}, \hyperlink{classJavaGenerator_a3431b1f8d251ab7a5a45ee3e809213ff}{Java\+Generator}, and \hyperlink{classCppGenerator_a7a0eb0f95cb897e3f702279b3df2f47a}{Cpp\+Generator}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classGenerator_a5b6ac73277bce0e06ed614d1202031e1}{}\index{Generator@{Generator}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Generator@{Generator}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Generator} \&}]{os, }
+\item[{const {\bf N\+\_\+\+Model\+Member} \&}]{mm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classGenerator_a5b6ac73277bce0e06ed614d1202031e1}
+Оператор вывода компонента модели в поток вывода шаблона 
+\begin{DoxyParams}{Parameters}
+{\em os} & -\/ поток вывода, в который выводится шаблон компонента модели \\
+\hline
+{\em mm} & -\/ выводимый компонент модели \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Поток вывода, в который был выведен шаблон 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classGenerator_a66fe842aa93b878a74c96fb0852d4626}{}\index{Generator@{Generator}!m\+\_\+os@{m\+\_\+os}}
+\index{m\+\_\+os@{m\+\_\+os}!Generator@{Generator}}
+\subsubsection[{m\+\_\+os}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& Generator\+::m\+\_\+os\hspace{0.3cm}{\ttfamily [protected]}}\label{classGenerator_a66fe842aa93b878a74c96fb0852d4626}
+
+
+Поток вывода шаблона 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ast_8h}{ast.\+h}\item 
+\hyperlink{ast_8cpp}{ast.\+cpp}\end{DoxyCompactItemize}

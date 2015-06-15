@@ -1,0 +1,194 @@
+\hypertarget{ast_8h}{}\section{ast.\+h File Reference}
+\label{ast_8h}\index{ast.\+h@{ast.\+h}}
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classN__ModelMember}{N\+\_\+\+Model\+Member}
+\item 
+class \hyperlink{classN__ModelOption}{N\+\_\+\+Model\+Option}
+\item 
+class \hyperlink{classN__Model}{N\+\_\+\+Model}
+\item 
+class \hyperlink{classN__Type}{N\+\_\+\+Type}
+\item 
+class \hyperlink{classN__ClassMember}{N\+\_\+\+Class\+Member}
+\item 
+class \hyperlink{classN__Field}{N\+\_\+\+Field}
+\item 
+class \hyperlink{classN__Param}{N\+\_\+\+Param}
+\item 
+class \hyperlink{classN__Interface}{N\+\_\+\+Interface}
+\item 
+class \hyperlink{classN__Class}{N\+\_\+\+Class}
+\item 
+class \hyperlink{classN__Exception}{N\+\_\+\+Exception}
+\item 
+struct \hyperlink{structMethodTypeInfo}{Method\+Type\+Info}
+\item 
+class \hyperlink{classN__Method}{N\+\_\+\+Method}
+\item 
+class \hyperlink{classN__Constructor}{N\+\_\+\+Constructor}
+\item 
+class \hyperlink{classN__Destructor}{N\+\_\+\+Destructor}
+\item 
+class \hyperlink{classGenerator}{Generator}
+\item 
+class \hyperlink{classCppGenerator}{Cpp\+Generator}
+\item 
+class \hyperlink{classJavaGenerator}{Java\+Generator}
+\item 
+class \hyperlink{classPascalGenerator}{Pascal\+Generator}
+\item 
+class \hyperlink{classObjPascalGenerator}{Obj\+Pascal\+Generator}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ast_8h_a315ca917ad583797f709ea477dd28705}{Language} \{ \hyperlink{ast_8h_a315ca917ad583797f709ea477dd28705a3680630f117c4ccf371ebc91f230f157}{L\+\_\+\+C\+P\+P}, 
+\hyperlink{ast_8h_a315ca917ad583797f709ea477dd28705a7a1b5dd10d2a853e7b472fa6290e0803}{L\+\_\+\+J\+A\+V\+A}, 
+\hyperlink{ast_8h_a315ca917ad583797f709ea477dd28705ad6b701504d809331192bf383057258c6}{L\+\_\+\+P\+A\+S\+C\+A\+L}, 
+\hyperlink{ast_8h_a315ca917ad583797f709ea477dd28705a46274942998fed20765d7dc187d10a0d}{L\+\_\+\+O\+B\+J\+P\+A\+S\+C\+A\+L}
+ \}
+\item 
+enum \hyperlink{ast_8h_a8a68ec34a59539de78ad64e57901b788}{Model\+Member\+Type} \{ \\*
+\hyperlink{ast_8h_a8a68ec34a59539de78ad64e57901b788ada9dffc5c9d80d4d6a6e4e6a665976b5}{M\+M\+T\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D}, 
+\hyperlink{ast_8h_a8a68ec34a59539de78ad64e57901b788afde7c332bb69aab641addeddc4800aa2}{M\+M\+T\+\_\+\+O\+P\+T\+I\+O\+N}, 
+\hyperlink{ast_8h_a8a68ec34a59539de78ad64e57901b788a161869125553a313f90053e4e38cf9bc}{M\+M\+T\+\_\+\+T\+Y\+P\+E}, 
+\hyperlink{ast_8h_a8a68ec34a59539de78ad64e57901b788a506ddefa9b92e82207697b9b485a3b18}{M\+M\+T\+\_\+\+C\+L\+A\+S\+S}, 
+\\*
+\hyperlink{ast_8h_a8a68ec34a59539de78ad64e57901b788a5b955caeb13939913cdc30d944f05940}{M\+M\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E}
+ \}
+\item 
+enum \hyperlink{ast_8h_a8cf536792064de0e4fc620bc6f1dc90e}{Member\+Visibility} \{ \hyperlink{ast_8h_a8cf536792064de0e4fc620bc6f1dc90eae560d950ff759756c70399d8cfe015d0}{M\+V\+\_\+\+P\+R\+I\+V\+A\+T\+E}, 
+\hyperlink{ast_8h_a8cf536792064de0e4fc620bc6f1dc90ea48d24817a6ad27b3d022a859bc165427}{M\+V\+\_\+\+P\+R\+O\+T\+E\+C\+T\+E\+D}, 
+\hyperlink{ast_8h_a8cf536792064de0e4fc620bc6f1dc90eabaae32a21ec263d4db185089d65bfcff}{M\+V\+\_\+\+P\+U\+B\+L\+I\+C}
+ \}
+\item 
+enum \hyperlink{ast_8h_af1bb1892f9e576501ff47410367569a7}{Param\+Direction} \{ \hyperlink{ast_8h_af1bb1892f9e576501ff47410367569a7afee394973f2e8a09ef035ae90b3eadb8}{F\+D\+\_\+\+I\+N}, 
+\hyperlink{ast_8h_af1bb1892f9e576501ff47410367569a7a63016094daf070ea095b3bf3769bcd5e}{F\+D\+\_\+\+O\+U\+T}, 
+\hyperlink{ast_8h_af1bb1892f9e576501ff47410367569a7a77d59eb6bec9c5e8fe3d8580310e150c}{F\+D\+\_\+\+I\+N\+O\+U\+T}
+ \}
+\item 
+enum \hyperlink{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cd}{Method\+Type} \{ \\*
+\hyperlink{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cdab2b708463edcb25ff1cb52c149e9ae03}{M\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N}, 
+\hyperlink{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cdadb45ac290b7c3756198401c40fb7af57}{M\+T\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E}, 
+\hyperlink{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda7941af83382b74543e61bbb02191be2f}{M\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R}, 
+\hyperlink{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda838394ffcd9c94e3297309f593b84426}{M\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R}, 
+\\*
+\hyperlink{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda750d8d504d9c35a5d6afd54e0b7b8b42}{M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E}, 
+\hyperlink{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda52c64b5f5070819bc56b3943e081b131}{M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N}
+ \}
+\item 
+enum \hyperlink{ast_8h_a6e3e364b8758e35526082aefa26d3596}{Stereotype} \{ \hyperlink{ast_8h_a6e3e364b8758e35526082aefa26d3596a9a8ebd951565c1079c216cdc7408a8de}{S\+T\+\_\+\+N\+O\+N\+E}, 
+\hyperlink{ast_8h_a6e3e364b8758e35526082aefa26d3596a1ac1e261f240bc08e664045147014cf6}{S\+T\+\_\+\+S\+T\+A\+T\+I\+C}, 
+\hyperlink{ast_8h_a6e3e364b8758e35526082aefa26d3596ac98e29b9f2251ae4e0d8ef0d7be15c11}{S\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R}, 
+\hyperlink{ast_8h_a6e3e364b8758e35526082aefa26d3596a7e60f23c1864da5d620d068e87314354}{S\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Содержит объявления классов элементов дерева синтаксического разбора и генераторов для них 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ast_8h_a315ca917ad583797f709ea477dd28705}{}\index{ast.\+h@{ast.\+h}!Language@{Language}}
+\index{Language@{Language}!ast.\+h@{ast.\+h}}
+\subsubsection[{Language}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Language}}\label{ast_8h_a315ca917ad583797f709ea477dd28705}
+Языки, для которых может быть сгенерирован шаблон \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+\_\+\+C\+P\+P@{L\+\_\+\+C\+P\+P}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!L\+\_\+\+C\+P\+P@{L\+\_\+\+C\+P\+P}}\item[{\em 
+\hypertarget{ast_8h_a315ca917ad583797f709ea477dd28705a3680630f117c4ccf371ebc91f230f157}{}L\+\_\+\+C\+P\+P\label{ast_8h_a315ca917ad583797f709ea477dd28705a3680630f117c4ccf371ebc91f230f157}
+}]C++. \index{L\+\_\+\+J\+A\+V\+A@{L\+\_\+\+J\+A\+V\+A}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!L\+\_\+\+J\+A\+V\+A@{L\+\_\+\+J\+A\+V\+A}}\item[{\em 
+\hypertarget{ast_8h_a315ca917ad583797f709ea477dd28705a7a1b5dd10d2a853e7b472fa6290e0803}{}L\+\_\+\+J\+A\+V\+A\label{ast_8h_a315ca917ad583797f709ea477dd28705a7a1b5dd10d2a853e7b472fa6290e0803}
+}]Java. \index{L\+\_\+\+P\+A\+S\+C\+A\+L@{L\+\_\+\+P\+A\+S\+C\+A\+L}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!L\+\_\+\+P\+A\+S\+C\+A\+L@{L\+\_\+\+P\+A\+S\+C\+A\+L}}\item[{\em 
+\hypertarget{ast_8h_a315ca917ad583797f709ea477dd28705ad6b701504d809331192bf383057258c6}{}L\+\_\+\+P\+A\+S\+C\+A\+L\label{ast_8h_a315ca917ad583797f709ea477dd28705ad6b701504d809331192bf383057258c6}
+}]Borland Pascal и Free\+Pascal. \index{L\+\_\+\+O\+B\+J\+P\+A\+S\+C\+A\+L@{L\+\_\+\+O\+B\+J\+P\+A\+S\+C\+A\+L}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!L\+\_\+\+O\+B\+J\+P\+A\+S\+C\+A\+L@{L\+\_\+\+O\+B\+J\+P\+A\+S\+C\+A\+L}}\item[{\em 
+\hypertarget{ast_8h_a315ca917ad583797f709ea477dd28705a46274942998fed20765d7dc187d10a0d}{}L\+\_\+\+O\+B\+J\+P\+A\+S\+C\+A\+L\label{ast_8h_a315ca917ad583797f709ea477dd28705a46274942998fed20765d7dc187d10a0d}
+}]Object\+Pascal и Objective Free\+Pascal. \end{description}
+\end{Desc}
+\hypertarget{ast_8h_a8cf536792064de0e4fc620bc6f1dc90e}{}\index{ast.\+h@{ast.\+h}!Member\+Visibility@{Member\+Visibility}}
+\index{Member\+Visibility@{Member\+Visibility}!ast.\+h@{ast.\+h}}
+\subsubsection[{Member\+Visibility}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Member\+Visibility}}\label{ast_8h_a8cf536792064de0e4fc620bc6f1dc90e}
+Области видимости членов класса \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+V\+\_\+\+P\+R\+I\+V\+A\+T\+E@{M\+V\+\_\+\+P\+R\+I\+V\+A\+T\+E}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+V\+\_\+\+P\+R\+I\+V\+A\+T\+E@{M\+V\+\_\+\+P\+R\+I\+V\+A\+T\+E}}\item[{\em 
+\hypertarget{ast_8h_a8cf536792064de0e4fc620bc6f1dc90eae560d950ff759756c70399d8cfe015d0}{}M\+V\+\_\+\+P\+R\+I\+V\+A\+T\+E\label{ast_8h_a8cf536792064de0e4fc620bc6f1dc90eae560d950ff759756c70399d8cfe015d0}
+}]Область private. \index{M\+V\+\_\+\+P\+R\+O\+T\+E\+C\+T\+E\+D@{M\+V\+\_\+\+P\+R\+O\+T\+E\+C\+T\+E\+D}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+V\+\_\+\+P\+R\+O\+T\+E\+C\+T\+E\+D@{M\+V\+\_\+\+P\+R\+O\+T\+E\+C\+T\+E\+D}}\item[{\em 
+\hypertarget{ast_8h_a8cf536792064de0e4fc620bc6f1dc90ea48d24817a6ad27b3d022a859bc165427}{}M\+V\+\_\+\+P\+R\+O\+T\+E\+C\+T\+E\+D\label{ast_8h_a8cf536792064de0e4fc620bc6f1dc90ea48d24817a6ad27b3d022a859bc165427}
+}]Область protected. \index{M\+V\+\_\+\+P\+U\+B\+L\+I\+C@{M\+V\+\_\+\+P\+U\+B\+L\+I\+C}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+V\+\_\+\+P\+U\+B\+L\+I\+C@{M\+V\+\_\+\+P\+U\+B\+L\+I\+C}}\item[{\em 
+\hypertarget{ast_8h_a8cf536792064de0e4fc620bc6f1dc90eabaae32a21ec263d4db185089d65bfcff}{}M\+V\+\_\+\+P\+U\+B\+L\+I\+C\label{ast_8h_a8cf536792064de0e4fc620bc6f1dc90eabaae32a21ec263d4db185089d65bfcff}
+}]Область public. \end{description}
+\end{Desc}
+\hypertarget{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cd}{}\index{ast.\+h@{ast.\+h}!Method\+Type@{Method\+Type}}
+\index{Method\+Type@{Method\+Type}!ast.\+h@{ast.\+h}}
+\subsubsection[{Method\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Method\+Type}}\label{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cd}
+Типы методов \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N@{M\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N@{M\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N}}\item[{\em 
+\hypertarget{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cdab2b708463edcb25ff1cb52c149e9ae03}{}M\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\label{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cdab2b708463edcb25ff1cb52c149e9ae03}
+}]Метод объекта, возвращающий значение \index{M\+T\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E@{M\+T\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+T\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E@{M\+T\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E}}\item[{\em 
+\hypertarget{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cdadb45ac290b7c3756198401c40fb7af57}{}M\+T\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E\label{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cdadb45ac290b7c3756198401c40fb7af57}
+}]Метод объекта, не возвращающий значение \index{M\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R@{M\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R@{M\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R}}\item[{\em 
+\hypertarget{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda7941af83382b74543e61bbb02191be2f}{}M\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R\label{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda7941af83382b74543e61bbb02191be2f}
+}]Конструктор объекта \index{M\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R@{M\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R@{M\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R}}\item[{\em 
+\hypertarget{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda838394ffcd9c94e3297309f593b84426}{}M\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R\label{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda838394ffcd9c94e3297309f593b84426}
+}]Деструктор объекта \index{M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E@{M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E@{M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E}}\item[{\em 
+\hypertarget{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda750d8d504d9c35a5d6afd54e0b7b8b42}{}M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E\label{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda750d8d504d9c35a5d6afd54e0b7b8b42}
+}]Метод класса, возвращающий значение \index{M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N@{M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N@{M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N}}\item[{\em 
+\hypertarget{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda52c64b5f5070819bc56b3943e081b131}{}M\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\label{ast_8h_a3006a5b9309b36eaa1cf179f1478b0cda52c64b5f5070819bc56b3943e081b131}
+}]Метод класса, не возвращающий значение \end{description}
+\end{Desc}
+\hypertarget{ast_8h_a8a68ec34a59539de78ad64e57901b788}{}\index{ast.\+h@{ast.\+h}!Model\+Member\+Type@{Model\+Member\+Type}}
+\index{Model\+Member\+Type@{Model\+Member\+Type}!ast.\+h@{ast.\+h}}
+\subsubsection[{Model\+Member\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Model\+Member\+Type}}\label{ast_8h_a8a68ec34a59539de78ad64e57901b788}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+M\+T\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D@{M\+M\+T\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+M\+T\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D@{M\+M\+T\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D}}\item[{\em 
+\hypertarget{ast_8h_a8a68ec34a59539de78ad64e57901b788ada9dffc5c9d80d4d6a6e4e6a665976b5}{}M\+M\+T\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\label{ast_8h_a8a68ec34a59539de78ad64e57901b788ada9dffc5c9d80d4d6a6e4e6a665976b5}
+}]\index{M\+M\+T\+\_\+\+O\+P\+T\+I\+O\+N@{M\+M\+T\+\_\+\+O\+P\+T\+I\+O\+N}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+M\+T\+\_\+\+O\+P\+T\+I\+O\+N@{M\+M\+T\+\_\+\+O\+P\+T\+I\+O\+N}}\item[{\em 
+\hypertarget{ast_8h_a8a68ec34a59539de78ad64e57901b788afde7c332bb69aab641addeddc4800aa2}{}M\+M\+T\+\_\+\+O\+P\+T\+I\+O\+N\label{ast_8h_a8a68ec34a59539de78ad64e57901b788afde7c332bb69aab641addeddc4800aa2}
+}]\index{M\+M\+T\+\_\+\+T\+Y\+P\+E@{M\+M\+T\+\_\+\+T\+Y\+P\+E}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+M\+T\+\_\+\+T\+Y\+P\+E@{M\+M\+T\+\_\+\+T\+Y\+P\+E}}\item[{\em 
+\hypertarget{ast_8h_a8a68ec34a59539de78ad64e57901b788a161869125553a313f90053e4e38cf9bc}{}M\+M\+T\+\_\+\+T\+Y\+P\+E\label{ast_8h_a8a68ec34a59539de78ad64e57901b788a161869125553a313f90053e4e38cf9bc}
+}]\index{M\+M\+T\+\_\+\+C\+L\+A\+S\+S@{M\+M\+T\+\_\+\+C\+L\+A\+S\+S}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+M\+T\+\_\+\+C\+L\+A\+S\+S@{M\+M\+T\+\_\+\+C\+L\+A\+S\+S}}\item[{\em 
+\hypertarget{ast_8h_a8a68ec34a59539de78ad64e57901b788a506ddefa9b92e82207697b9b485a3b18}{}M\+M\+T\+\_\+\+C\+L\+A\+S\+S\label{ast_8h_a8a68ec34a59539de78ad64e57901b788a506ddefa9b92e82207697b9b485a3b18}
+}]\index{M\+M\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E@{M\+M\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!M\+M\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E@{M\+M\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E}}\item[{\em 
+\hypertarget{ast_8h_a8a68ec34a59539de78ad64e57901b788a5b955caeb13939913cdc30d944f05940}{}M\+M\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\label{ast_8h_a8a68ec34a59539de78ad64e57901b788a5b955caeb13939913cdc30d944f05940}
+}]\end{description}
+\end{Desc}
+\hypertarget{ast_8h_af1bb1892f9e576501ff47410367569a7}{}\index{ast.\+h@{ast.\+h}!Param\+Direction@{Param\+Direction}}
+\index{Param\+Direction@{Param\+Direction}!ast.\+h@{ast.\+h}}
+\subsubsection[{Param\+Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Param\+Direction}}\label{ast_8h_af1bb1892f9e576501ff47410367569a7}
+Направление параметра \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\+D\+\_\+\+I\+N@{F\+D\+\_\+\+I\+N}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!F\+D\+\_\+\+I\+N@{F\+D\+\_\+\+I\+N}}\item[{\em 
+\hypertarget{ast_8h_af1bb1892f9e576501ff47410367569a7afee394973f2e8a09ef035ae90b3eadb8}{}F\+D\+\_\+\+I\+N\label{ast_8h_af1bb1892f9e576501ff47410367569a7afee394973f2e8a09ef035ae90b3eadb8}
+}]Входной параметр, допускается передача константы \index{F\+D\+\_\+\+O\+U\+T@{F\+D\+\_\+\+O\+U\+T}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!F\+D\+\_\+\+O\+U\+T@{F\+D\+\_\+\+O\+U\+T}}\item[{\em 
+\hypertarget{ast_8h_af1bb1892f9e576501ff47410367569a7a63016094daf070ea095b3bf3769bcd5e}{}F\+D\+\_\+\+O\+U\+T\label{ast_8h_af1bb1892f9e576501ff47410367569a7a63016094daf070ea095b3bf3769bcd5e}
+}]Выходной параметр, передается ссылка или указатель, инициализация не требуется \index{F\+D\+\_\+\+I\+N\+O\+U\+T@{F\+D\+\_\+\+I\+N\+O\+U\+T}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!F\+D\+\_\+\+I\+N\+O\+U\+T@{F\+D\+\_\+\+I\+N\+O\+U\+T}}\item[{\em 
+\hypertarget{ast_8h_af1bb1892f9e576501ff47410367569a7a77d59eb6bec9c5e8fe3d8580310e150c}{}F\+D\+\_\+\+I\+N\+O\+U\+T\label{ast_8h_af1bb1892f9e576501ff47410367569a7a77d59eb6bec9c5e8fe3d8580310e150c}
+}]Входной и выходной параметр, передается ссылка или указатель, требуется инициализация \end{description}
+\end{Desc}
+\hypertarget{ast_8h_a6e3e364b8758e35526082aefa26d3596}{}\index{ast.\+h@{ast.\+h}!Stereotype@{Stereotype}}
+\index{Stereotype@{Stereotype}!ast.\+h@{ast.\+h}}
+\subsubsection[{Stereotype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Stereotype}}\label{ast_8h_a6e3e364b8758e35526082aefa26d3596}
+Стереотипы методов \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+T\+\_\+\+N\+O\+N\+E@{S\+T\+\_\+\+N\+O\+N\+E}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!S\+T\+\_\+\+N\+O\+N\+E@{S\+T\+\_\+\+N\+O\+N\+E}}\item[{\em 
+\hypertarget{ast_8h_a6e3e364b8758e35526082aefa26d3596a9a8ebd951565c1079c216cdc7408a8de}{}S\+T\+\_\+\+N\+O\+N\+E\label{ast_8h_a6e3e364b8758e35526082aefa26d3596a9a8ebd951565c1079c216cdc7408a8de}
+}]Нет стереотипа \index{S\+T\+\_\+\+S\+T\+A\+T\+I\+C@{S\+T\+\_\+\+S\+T\+A\+T\+I\+C}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!S\+T\+\_\+\+S\+T\+A\+T\+I\+C@{S\+T\+\_\+\+S\+T\+A\+T\+I\+C}}\item[{\em 
+\hypertarget{ast_8h_a6e3e364b8758e35526082aefa26d3596a1ac1e261f240bc08e664045147014cf6}{}S\+T\+\_\+\+S\+T\+A\+T\+I\+C\label{ast_8h_a6e3e364b8758e35526082aefa26d3596a1ac1e261f240bc08e664045147014cf6}
+}]Классовый метод \index{S\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R@{S\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!S\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R@{S\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R}}\item[{\em 
+\hypertarget{ast_8h_a6e3e364b8758e35526082aefa26d3596ac98e29b9f2251ae4e0d8ef0d7be15c11}{}S\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+R\label{ast_8h_a6e3e364b8758e35526082aefa26d3596ac98e29b9f2251ae4e0d8ef0d7be15c11}
+}]Конструктор \index{S\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R@{S\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R}!ast.\+h@{ast.\+h}}\index{ast.\+h@{ast.\+h}!S\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R@{S\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R}}\item[{\em 
+\hypertarget{ast_8h_a6e3e364b8758e35526082aefa26d3596a7e60f23c1864da5d620d068e87314354}{}S\+T\+\_\+\+D\+E\+S\+T\+R\+U\+C\+T\+O\+R\label{ast_8h_a6e3e364b8758e35526082aefa26d3596a7e60f23c1864da5d620d068e87314354}
+}]Деструктор \end{description}
+\end{Desc}

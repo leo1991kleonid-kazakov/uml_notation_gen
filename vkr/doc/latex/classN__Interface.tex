@@ -1,0 +1,128 @@
+\hypertarget{classN__Interface}{}\section{N\+\_\+\+Interface Class Reference}
+\label{classN__Interface}\index{N\+\_\+\+Interface@{N\+\_\+\+Interface}}
+
+
+{\ttfamily \#include $<$ast.\+h$>$}
+
+Inheritance diagram for N\+\_\+\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classN__Interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classN__Interface_a6127252915b959e78a3c47c21ddb54f4}{N\+\_\+\+Interface} (std\+::string name)
+\item 
+virtual \hyperlink{classN__Interface_a3f09f32cb660660a7b03331f31a8b904}{$\sim$\+N\+\_\+\+Interface} ()
+\item 
+virtual void \hyperlink{classN__Interface_a4beb006efe4088bf7b243fa93935b369}{add\+Method} (\hyperlink{classN__Method}{N\+\_\+\+Method} \&method)
+\item 
+virtual std\+::vector$<$ \hyperlink{classN__Method}{N\+\_\+\+Method} $>$ \hyperlink{classN__Interface_af17e8ba1285e33747c37b2517178215a}{get\+Methods} ()
+\item 
+virtual void \hyperlink{classN__Interface_a04397ba5bc93dd83a3b601faf79768e5}{add\+Ancestor\+Interface} (\hyperlink{classN__Interface}{N\+\_\+\+Interface} \&i)
+\item 
+virtual std\+::vector$<$ \hyperlink{classN__Interface}{N\+\_\+\+Interface} $>$ \hyperlink{classN__Interface_a458a8c43e3b810adc68caabf3b0710fa}{get\+Ancestor\+Interfaces} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classN__Method}{N\+\_\+\+Method} $>$ \hyperlink{classN__Interface_a853b6a5a8de7e877facadcd85ea5e496}{m\+\_\+methods}
+\begin{DoxyCompactList}\small\item\em Коллекция методов интерфейса \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classN__Interface}{N\+\_\+\+Interface} $>$ \hyperlink{classN__Interface_a28ed630cf66d6fba884965c92b608dcd}{m\+\_\+ancestor\+\_\+interfaces}
+\begin{DoxyCompactList}\small\item\em Коллекция интерфейсов-\/предков \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Нетерминал, обозначающий интерфейс 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classN__Interface_a6127252915b959e78a3c47c21ddb54f4}{}\index{N\+\_\+\+Interface@{N\+\_\+\+Interface}!N\+\_\+\+Interface@{N\+\_\+\+Interface}}
+\index{N\+\_\+\+Interface@{N\+\_\+\+Interface}!N\+\_\+\+Interface@{N\+\_\+\+Interface}}
+\subsubsection[{N\+\_\+\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}N\+\_\+\+Interface\+::\+N\+\_\+\+Interface (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classN__Interface_a6127252915b959e78a3c47c21ddb54f4}
+Конструктор 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ имя интерфейса \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Interface_a3f09f32cb660660a7b03331f31a8b904}{}\index{N\+\_\+\+Interface@{N\+\_\+\+Interface}!````~N\+\_\+\+Interface@{$\sim$\+N\+\_\+\+Interface}}
+\index{````~N\+\_\+\+Interface@{$\sim$\+N\+\_\+\+Interface}!N\+\_\+\+Interface@{N\+\_\+\+Interface}}
+\subsubsection[{$\sim$\+N\+\_\+\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}virtual N\+\_\+\+Interface\+::$\sim$\+N\+\_\+\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Interface_a3f09f32cb660660a7b03331f31a8b904}
+Деструктор 
+
+\subsection{Member Function Documentation}
+\hypertarget{classN__Interface_a04397ba5bc93dd83a3b601faf79768e5}{}\index{N\+\_\+\+Interface@{N\+\_\+\+Interface}!add\+Ancestor\+Interface@{add\+Ancestor\+Interface}}
+\index{add\+Ancestor\+Interface@{add\+Ancestor\+Interface}!N\+\_\+\+Interface@{N\+\_\+\+Interface}}
+\subsubsection[{add\+Ancestor\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}virtual void N\+\_\+\+Interface\+::add\+Ancestor\+Interface (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Interface} \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Interface_a04397ba5bc93dd83a3b601faf79768e5}
+Добавление интерфейса-\/предка 
+\begin{DoxyParams}{Parameters}
+{\em i} & -\/ интерфейс, который необходимо добавить в качестве предка \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Interface_a4beb006efe4088bf7b243fa93935b369}{}\index{N\+\_\+\+Interface@{N\+\_\+\+Interface}!add\+Method@{add\+Method}}
+\index{add\+Method@{add\+Method}!N\+\_\+\+Interface@{N\+\_\+\+Interface}}
+\subsubsection[{add\+Method}]{\setlength{\rightskip}{0pt plus 5cm}virtual void N\+\_\+\+Interface\+::add\+Method (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Method} \&}]{method}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Interface_a4beb006efe4088bf7b243fa93935b369}
+Добавление метода 
+\begin{DoxyParams}{Parameters}
+{\em method} & -\/ метод, который необходимо добавить в интерфейс \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Interface_a458a8c43e3b810adc68caabf3b0710fa}{}\index{N\+\_\+\+Interface@{N\+\_\+\+Interface}!get\+Ancestor\+Interfaces@{get\+Ancestor\+Interfaces}}
+\index{get\+Ancestor\+Interfaces@{get\+Ancestor\+Interfaces}!N\+\_\+\+Interface@{N\+\_\+\+Interface}}
+\subsubsection[{get\+Ancestor\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<${\bf N\+\_\+\+Interface}$>$ N\+\_\+\+Interface\+::get\+Ancestor\+Interfaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Interface_a458a8c43e3b810adc68caabf3b0710fa}
+Получение коллекции интерфейсов-\/предков \begin{DoxyReturn}{Returns}
+Коллекция интерфейсов-\/предков 
+\end{DoxyReturn}
+\hypertarget{classN__Interface_af17e8ba1285e33747c37b2517178215a}{}\index{N\+\_\+\+Interface@{N\+\_\+\+Interface}!get\+Methods@{get\+Methods}}
+\index{get\+Methods@{get\+Methods}!N\+\_\+\+Interface@{N\+\_\+\+Interface}}
+\subsubsection[{get\+Methods}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<${\bf N\+\_\+\+Method}$>$ N\+\_\+\+Interface\+::get\+Methods (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Interface_af17e8ba1285e33747c37b2517178215a}
+Получение коллекции методов интерфейса \begin{DoxyReturn}{Returns}
+Коллекция методов интерфейса 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classN__Interface_a28ed630cf66d6fba884965c92b608dcd}{}\index{N\+\_\+\+Interface@{N\+\_\+\+Interface}!m\+\_\+ancestor\+\_\+interfaces@{m\+\_\+ancestor\+\_\+interfaces}}
+\index{m\+\_\+ancestor\+\_\+interfaces@{m\+\_\+ancestor\+\_\+interfaces}!N\+\_\+\+Interface@{N\+\_\+\+Interface}}
+\subsubsection[{m\+\_\+ancestor\+\_\+interfaces}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+\_\+\+Interface}$>$ N\+\_\+\+Interface\+::m\+\_\+ancestor\+\_\+interfaces\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Interface_a28ed630cf66d6fba884965c92b608dcd}
+
+
+Коллекция интерфейсов-\/предков 
+
+\hypertarget{classN__Interface_a853b6a5a8de7e877facadcd85ea5e496}{}\index{N\+\_\+\+Interface@{N\+\_\+\+Interface}!m\+\_\+methods@{m\+\_\+methods}}
+\index{m\+\_\+methods@{m\+\_\+methods}!N\+\_\+\+Interface@{N\+\_\+\+Interface}}
+\subsubsection[{m\+\_\+methods}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+\_\+\+Method}$>$ N\+\_\+\+Interface\+::m\+\_\+methods\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Interface_a853b6a5a8de7e877facadcd85ea5e496}
+
+
+Коллекция методов интерфейса 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ast_8h}{ast.\+h}\end{DoxyCompactItemize}

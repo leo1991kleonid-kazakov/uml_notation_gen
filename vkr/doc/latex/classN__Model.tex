@@ -1,0 +1,152 @@
+\hypertarget{classN__Model}{}\section{N\+\_\+\+Model Class Reference}
+\label{classN__Model}\index{N\+\_\+\+Model@{N\+\_\+\+Model}}
+
+
+{\ttfamily \#include $<$ast.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classN__Model_a1daec6e71b170ad19acd92a0610d3c3b}{N\+\_\+\+Model} (const std\+::string \&name)
+\item 
+virtual \hyperlink{classN__Model_adf9eb562be34647c3ea86c0e0977d64e}{$\sim$\+N\+\_\+\+Model} ()
+\item 
+virtual std\+::string \hyperlink{classN__Model_a1271bdcab31a78aef8a1de598cd3158c}{get\+Name} () const 
+\item 
+virtual void \hyperlink{classN__Model_ac10c3efe2443db62bbf44d3430c1298f}{add\+Member} (\hyperlink{classN__ModelMember}{N\+\_\+\+Model\+Member} $\ast$member)
+\item 
+virtual int \hyperlink{classN__Model_a67f00ff3575e7c7f2754dce0dc42870f}{get\+Member\+Count} () const 
+\item 
+virtual \hyperlink{classN__ModelMember}{N\+\_\+\+Model\+Member} $\ast$ \hyperlink{classN__Model_a0b27d0fa5410fe08b6d6564048a057db}{get\+Member} (int index)
+\item 
+virtual void \hyperlink{classN__Model_a6a25ea55dc864af8dc0e23829661f5c2}{add\+Option} (\hyperlink{classN__ModelOption}{N\+\_\+\+Model\+Option} \&option)
+\item 
+virtual int \hyperlink{classN__Model_a917f55a3f1886f77164761b3553030e5}{get\+Option\+Count} () const 
+\item 
+virtual \hyperlink{classN__ModelOption}{N\+\_\+\+Model\+Option} \& \hyperlink{classN__Model_a5582c8fbdbb9b7860da7c26c6be299f9}{get\+Option} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classN__Model_a9d9ab454862eb335a49140a4c80dcf6b}{m\+\_\+name}
+\begin{DoxyCompactList}\small\item\em Имя модели \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classN__ModelMember}{N\+\_\+\+Model\+Member} $\ast$ $>$ \hyperlink{classN__Model_a17c2bb912ce895df0c9e32f680a510b5}{m\+\_\+members}
+\begin{DoxyCompactList}\small\item\em Коллекция элементов модели \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classN__ModelOption}{N\+\_\+\+Model\+Option} $>$ \hyperlink{classN__Model_a7ef79bbb67076275fc204313c112f548}{m\+\_\+options}
+\begin{DoxyCompactList}\small\item\em Коллекция опций модели \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classN__Model_a1daec6e71b170ad19acd92a0610d3c3b}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\index{N\+\_\+\+Model@{N\+\_\+\+Model}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{N\+\_\+\+Model}]{\setlength{\rightskip}{0pt plus 5cm}N\+\_\+\+Model\+::\+N\+\_\+\+Model (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classN__Model_a1daec6e71b170ad19acd92a0610d3c3b}
+Конструктор 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ имя модели \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Model_adf9eb562be34647c3ea86c0e0977d64e}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!````~N\+\_\+\+Model@{$\sim$\+N\+\_\+\+Model}}
+\index{````~N\+\_\+\+Model@{$\sim$\+N\+\_\+\+Model}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{$\sim$\+N\+\_\+\+Model}]{\setlength{\rightskip}{0pt plus 5cm}virtual N\+\_\+\+Model\+::$\sim$\+N\+\_\+\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Model_adf9eb562be34647c3ea86c0e0977d64e}
+Деструктор 
+
+\subsection{Member Function Documentation}
+\hypertarget{classN__Model_ac10c3efe2443db62bbf44d3430c1298f}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!add\+Member@{add\+Member}}
+\index{add\+Member@{add\+Member}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{add\+Member}]{\setlength{\rightskip}{0pt plus 5cm}virtual void N\+\_\+\+Model\+::add\+Member (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Model\+Member} $\ast$}]{member}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Model_ac10c3efe2443db62bbf44d3430c1298f}
+Добавление элемента модели 
+\begin{DoxyParams}{Parameters}
+{\em member} & -\/ добавляемый элемент \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Model_a6a25ea55dc864af8dc0e23829661f5c2}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!add\+Option@{add\+Option}}
+\index{add\+Option@{add\+Option}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{add\+Option}]{\setlength{\rightskip}{0pt plus 5cm}virtual void N\+\_\+\+Model\+::add\+Option (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+\_\+\+Model\+Option} \&}]{option}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Model_a6a25ea55dc864af8dc0e23829661f5c2}
+Добавление опции модели 
+\begin{DoxyParams}{Parameters}
+{\em option} & -\/ добавляемая опция \\
+\hline
+\end{DoxyParams}
+\hypertarget{classN__Model_a0b27d0fa5410fe08b6d6564048a057db}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!get\+Member@{get\+Member}}
+\index{get\+Member@{get\+Member}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{get\+Member}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf N\+\_\+\+Model\+Member}$\ast$ N\+\_\+\+Model\+::get\+Member (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Model_a0b27d0fa5410fe08b6d6564048a057db}
+\hypertarget{classN__Model_a67f00ff3575e7c7f2754dce0dc42870f}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!get\+Member\+Count@{get\+Member\+Count}}
+\index{get\+Member\+Count@{get\+Member\+Count}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{get\+Member\+Count}]{\setlength{\rightskip}{0pt plus 5cm}virtual int N\+\_\+\+Model\+::get\+Member\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Model_a67f00ff3575e7c7f2754dce0dc42870f}
+\hypertarget{classN__Model_a1271bdcab31a78aef8a1de598cd3158c}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string N\+\_\+\+Model\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Model_a1271bdcab31a78aef8a1de598cd3158c}
+Получение имени модели \begin{DoxyReturn}{Returns}
+имя модели 
+\end{DoxyReturn}
+\hypertarget{classN__Model_a5582c8fbdbb9b7860da7c26c6be299f9}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!get\+Option@{get\+Option}}
+\index{get\+Option@{get\+Option}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{get\+Option}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf N\+\_\+\+Model\+Option}\& N\+\_\+\+Model\+::get\+Option (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Model_a5582c8fbdbb9b7860da7c26c6be299f9}
+\hypertarget{classN__Model_a917f55a3f1886f77164761b3553030e5}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!get\+Option\+Count@{get\+Option\+Count}}
+\index{get\+Option\+Count@{get\+Option\+Count}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{get\+Option\+Count}]{\setlength{\rightskip}{0pt plus 5cm}virtual int N\+\_\+\+Model\+::get\+Option\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classN__Model_a917f55a3f1886f77164761b3553030e5}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classN__Model_a17c2bb912ce895df0c9e32f680a510b5}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!m\+\_\+members@{m\+\_\+members}}
+\index{m\+\_\+members@{m\+\_\+members}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{m\+\_\+members}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+\_\+\+Model\+Member}$\ast$$>$ N\+\_\+\+Model\+::m\+\_\+members\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Model_a17c2bb912ce895df0c9e32f680a510b5}
+
+
+Коллекция элементов модели 
+
+\hypertarget{classN__Model_a9d9ab454862eb335a49140a4c80dcf6b}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!m\+\_\+name@{m\+\_\+name}}
+\index{m\+\_\+name@{m\+\_\+name}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{m\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string N\+\_\+\+Model\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Model_a9d9ab454862eb335a49140a4c80dcf6b}
+
+
+Имя модели 
+
+\hypertarget{classN__Model_a7ef79bbb67076275fc204313c112f548}{}\index{N\+\_\+\+Model@{N\+\_\+\+Model}!m\+\_\+options@{m\+\_\+options}}
+\index{m\+\_\+options@{m\+\_\+options}!N\+\_\+\+Model@{N\+\_\+\+Model}}
+\subsubsection[{m\+\_\+options}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+\_\+\+Model\+Option}$>$ N\+\_\+\+Model\+::m\+\_\+options\hspace{0.3cm}{\ttfamily [protected]}}\label{classN__Model_a7ef79bbb67076275fc204313c112f548}
+
+
+Коллекция опций модели 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ast_8h}{ast.\+h}\end{DoxyCompactItemize}
